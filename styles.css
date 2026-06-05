@@ -11,7 +11,7 @@
     top: 0;
     left:0;
     width: 100%;
-    padding: 40px 10%;
+    padding: 20px 5%;
     background: rgba(0,0,0,0.8);
     backdrop-filter:blur(10px);
     display: flex;
@@ -20,8 +20,8 @@
     z-index: 100;
 }
 .logo{
-    font-size: 30px;
-    font-weight: 500;
+    font-size: 25px;
+    font-weight: 300;
     color: white;
     transition: 0.3s ease;
 }
@@ -50,11 +50,12 @@ span{
     transition: 0.3s ease;
 }
 .contact:hover{
-    background-color: oranger;
+    background-color: orangered;
     color: white;
 }
 .home{
     width: 100%;
+
     background: rgb(241,241,241);
     display: flex;
     align-items: center;
