@@ -55,7 +55,6 @@ span{
 }
 .home{
     width: 100%;
-
     background: rgb(241,241,241);
     display: flex;
     align-items: center;
@@ -134,8 +133,8 @@ span{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10% 3%;
-    gap: 10em;
+    padding: 50px 8% 50px;
+    gap: 5em;
     background: black;
 }
 .about-img img{
@@ -163,7 +162,7 @@ span{
     text-align: center;
     margin-top: 3em;
     margin-bottom: 1em;
-    font-size: 36px;
+    font-size: 30px;
 }
 .contact-form form{
     max-width: 30em;
