@@ -56,12 +56,11 @@ span{
 }
 .home{
     width: 100%;
-    min-height: 90vh;
     background: rgb(241,241,241);
     display: flex;
     align-items: center;
     gap: 7em;
-    padding: 10px 5% 0;
+    padding: 120px 12% 50px;
 }
 .home-content{
     max-width: 600px;
