@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>QR Code Generator</title>
+  <meta name="description"
+  content="Generate QR codes instantly for free using our fast QR code generator website.">
+
+  <meta name="keywords"
+  content="QR code generator, free QR code, online QR maker">
+
+  <meta name="author" content="Pintu Sah Rauniyar">
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body{
+      height:100vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      background: linear-gradient(135deg, #4facfe, #00f2fe);
+    }
+
+    .container{
+      background:white;
+      padding:30px;
+      border-radius:15px;
+      width:350px;
+      text-align:center;
+      box-shadow:0 5px 15px rgba(0,0,0,0.2);
+    }
+
+    h1{
+      margin-bottom:10px;
+      color:#333;
+    }
+
+    p{
+      font-size:14px;
+      color:#666;
+      margin-bottom:20px;
+    }
+
+    input{
+      width:100%;
+      padding:12px;
+      border:2px solid #ddd;
+      border-radius:8px;
+      outline:none;
+      margin-bottom:15px;
+      font-size:16px;
+    }
+
+    button{
+      width:100%;
+      padding:12px;
+      border:none;
+      border-radius:8px;
+      background:#007bff;
+      color:white;
+      font-size:16px;
+      cursor:pointer;
+      transition:0.3s;
+    }
+
+    button:hover{
+      background:#0056b3;
+    }
+
+    #qrImage{
+      margin-top:20px;
+      display:none;
+    }
+
+    img{
+      width:200px;
+      height:200px;
+      border:5px solid #eee;
+      padding:10px;
+      border-radius:10px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>QR Code Generator</h1>
+
+    <p>
+      Enter any text or website link below to generate your QR Code instantly.
+    </p>
+
+    <input type="text" id="qrText" placeholder="Enter text or URL">
+
+    <button onclick="generateQR()">Generate QR Code</button>
+
+    <div id="qrImage">
+      <img id="qrCode">
+    </div>
+  </div>
+
+  <script>
+    function generateQR() {
+
+      let qrText = document.getElementById("qrText").value;
+      let qrCode = document.getElementById("qrCode");
+      let qrImage = document.getElementById("qrImage");
+
+      if(qrText === ""){
+        alert("Please enter text or URL");
+      }
+      else{
+        qrCode.src =
+        "https://api.qrserver.com/v1/create-qr-code/?size=200x200&data="
+        + encodeURIComponent(qrText);
+
+        qrImage.style.display = "block";
+      }
+    }
+  </script>
+
+</body>
+</html>
