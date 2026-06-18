@@ -17,6 +17,63 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body{
+    background:#f5f7fa;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+}
+.s-container{
+   width:90%;
+   margin:10%;
+   text-align:center;
+   padding:20px;
+   background:#1e51;
+   border-radius:20px;
+   box-shadow:0 10px 20px rgba(0,0,0,0.3);
+
+}
+
+.services{
+   padding: 25px 40px;
+    margin:5%;
+    width:40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;   /* space between buttons */
+
+}
+.services-btn{
+display: inline-block;
+    width:250px;
+    padding: 15px 20px;
+    background: #ee6600;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 25px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.services-btn:hover{
+   transform:translateY(-8px);
+   background:#11bb;
+}
+</style>
+
+
     <header class="header">
         <a href="index.html" class="logo"><span>ELECTRONICS</span> ENGINEER</a>
         <!-- Navigation Section -->
@@ -29,10 +86,19 @@
         </nav>
         <a href="contactme.html" class="contact">Contact Me</a>
     </header>
+    <div class="s-container">
+    <h1> Our <span> Services </span> </h1>
     <div class="services">
+        <a href="https://chatgpt.com//" class="services-btn"> Chatgpt </a>
+        <a href="https://www.google.com/" class="services-btn"> Google Search </a>
 	<a href="qrcode.html" class="services-btn"> QR code Generator </a>
-        <a href="https://www.google.com/" class="services-btn"> Google search </a>
-
+        
+        
+        <a href="https://www.ilovepdf.com/" class="services-btn"> ilovepdf </a>
+        <a href="https://www.tinkercad.com/dashboard" class="services-btn"> TinkerCad IOT </a>
+        <a href="https://codepen.io/pen/" class="services-btn"> CodePen (HTML, CSS, JS COMPILER) </a>
+    </div>
+    </div>
 
 
 
