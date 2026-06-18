@@ -291,27 +291,3 @@ span{
    width:100%;
 }
 
-/* services design */
-.services{
-   padding: 25px 40px;
-    margin:5%;
-    width:40%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;   /* space between buttons */
-
-}
-.services-btn{
-display: inline-block;
-    width: 200px;
-    padding: 12px 20px;
-    background: #ff6600;
-    color: white;
-    text-decoration: none;
-    text-align: center;
-    border-radius: 25px;
-    font-size: 18px;
-    font-weight: bold;
-    transition: 0.3s;
-}
