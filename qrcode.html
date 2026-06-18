@@ -72,6 +72,7 @@
 
     button:hover{
       background:#0056b3;
+      transform:translateY(-3px) scale(0.9);
     }
 
     #imgBox{
@@ -130,14 +131,22 @@ function generateQR() {
         downloadBtn.style.display = "inline-block";
 
         // Set download link
-        downloadBtn.onclick = function () {
-            let a = document.createElement("a");
-            a.href = qrUrl;
-            a.download = "QRCode.png";
-            document.body.appendChild(a);
-            a.click();
-            document.body.removeChild(a);
-        };
+        downloadBtn.addEventListener("click", async () => {
+    const response = await fetch(qrImage.src);
+    const blob = await response.blob();
+
+    const url = window.URL.createObjectURL(blob);
+
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = "QRCode.png";
+
+    document.body.appendChild(a);
+    a.click();
+
+    document.body.removeChild(a);
+    window.URL.revokeObjectURL(url);
+});
     }
 }
 
