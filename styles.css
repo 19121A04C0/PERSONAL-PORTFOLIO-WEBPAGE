@@ -11,7 +11,7 @@
     top: 0;
     left:0;
     width: 100%;
-    padding: 20px 5%;
+    padding: 5px 3%;
     background: rgba(150,0,0,0.8);
     backdrop-filter:blur(10px);
     display: flex;
@@ -21,7 +21,7 @@
 }
 .logo{
     font-size: 25px;
-    font-weight: 300;
+    font-weight: 500;
     color: white;
     transition: 0.3s ease;
 }
@@ -36,8 +36,34 @@ span{
 .navbar a:hover,
 .navbar a.active{
     color: WHITE;
-    border-bottom: 3px solid white;
+    border-bottom: 2px solid white;
 }
+
+
+.h6{
+    padding:2px 2px;
+    width:80%;
+    margin-top:4%;
+    margin-left:50%;
+    font-size:14px;
+    text-align:center;
+    color:#00f1;
+    transform:translate(-50%, -50%);
+    animation: effect 2s linear infinite;
+
+}
+@keyframes effect {
+            0% {
+                background: linear-gradient(#0a8000, #111F00);
+                -webkit-background-clip:text;
+            }
+
+            100% {
+                background: linear-gradient(#3CE7D7, #00ffaa);
+                -webkit-background-clip:text;
+            }
+        }
+
 .contact{
     padding: 5px 18px;
     background-color: white;
@@ -196,8 +222,9 @@ span{
     background-color: black;
 }
 .footer .social{
+    margin-top:15px;
     text-align: center;
-    padding-bottom: 25px;
+    padding-bottom: 10px;
     color: white;
 }
 .footer .social a{
@@ -210,7 +237,7 @@ span{
     display: inline-block;
     text-align: center;
     border-radius: 50%;
-    margin: 0 8px;
+    margin: 0 4px;
     box-shadow: inset 0 0 10px orangered, 0 0 10px orangered;
     transition: 0.3s ease;
 }
