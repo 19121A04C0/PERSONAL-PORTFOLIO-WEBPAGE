@@ -18,7 +18,10 @@
 </head>
 <body>
     <header class="header">
+        <div class="quotes">
         <a href="index.html" class="logo"><span>ELECTRONICS</span> ENGINEER</a>
+        <h6 class="h6"> "Where science meets Innovation" </h6>
+        </div>
         <!-- Navigation Section -->
         <nav class="navbar">
             <a href="index.html">Portfolio</a>
@@ -27,40 +30,82 @@
             <a href="#">Experience</a>
             <a href="education.html">Education</a>
         </nav>
-        <a href="#" class="contact">Contact Me</a>
+        <a href="contactme.html" class="contact">Contact Me</a>
     </header>
 
-<section>
-	<div class="table">
-    	<table width="100%" border="0" cellpadding="20">
-        <tr align="center">
+<style>
 
-            <!-- Address -->
-            <td>
-                <h2>📍 Address</h2>
-                <p>
-                    44300, Dhobini Rural Muncipality-1 Pipara<br>
-                    Parsa, NEPAL
-                </p>
-            </td>
+body{
+    background:#f5f7fa;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+}
 
-            <!-- Phone -->
-            <td>
-                <h2>📞 Phone</h2>
-                <p>
-                    +9779744722053                </p>
-            </td>
+.main-container{
+  width:90%;
+  height:60vh;
+  text-align:center;
+  content-justify:center;
+  margin:5% 20px;
+  padding: 20px;
+  background:#1e51;
+  border-radius:15px;
+  box-shadow:0 10px 20px rgba(0,0,0,0.3);
+}
+.container{
+ margin:40px;
+  gap:20px;
+  display:flex;
+  content-justify:center;
+  flex-wrap:wrap;
+}
+.box{
+  flex:1;
+  padding:20px 20px;
+  text-align:center;
+  height:120px;
+  background:#ff11;
+  border-radius:10px;
+  box-shadow:0 5px 10px rgba(0,0,0,0.3);
+}
+.box:hover{
+  transform:translateY(-10px) scale(0.8) rotate(1.5deg);
+  background:#0fff;
+ 
+}
 
-            <!-- Email -->
-            <td>
-                <h2>✉️ Email</h2>
-                <p>
-                    pintusahrauniyar94068@gmail.com
-                </p>
-            </td>
+p{
+  font-size:13px;
+}
 
-        </tr>
-    </table>
+</style>
+</head>
+<body>
+
+<div class="main-container">
+  <h1> Contact <span>Information</span> </h1>
+  <div class="container">
+    <div class="box">
+      <h2> 📍Adress </h2>
+      <p> Dhobini-1, Pipara </p>
+    </div>
+    <div class="box">
+      <h2> 📞 Phone </h2>
+      <p> +977-9700000000 </p>
+    </div>
+    <div class="box">
+      <h2> ✉️ Email </h2>
+      <p style="color:green"> pintusahrauniyar94068@gmail.com </p>
+    </div>
+    <div class="box">
+      <h2> 📲 Whatsapp </h2>
+       <img src="images/whatsapp-qr.png" alt="WhatsApp QR Code" class="qr-code">
+    <p>Scan to contact us</p>
+    </div>
+  </div>
 </div>
-</section>
+
+</body>
 </html>
